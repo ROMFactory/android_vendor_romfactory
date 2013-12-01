@@ -1,12 +1,12 @@
 SUPERUSER_EMBEDDED := true
 
 # Generic product
-PRODUCT_NAME := xenonhd
-PRODUCT_BRAND := xenonhd
+PRODUCT_NAME := romfactory
+PRODUCT_BRAND := romfactory
 PRODUCT_DEVICE := generic
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/xenonhd/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/common
 
 PRODUCT_PACKAGES += \
         Apollo \
@@ -20,11 +20,8 @@ PRODUCT_PACKAGES += \
         Focal \
 	Launcher3 \
         OTAUpdateCenter \
-	ROMSettings \
-        ROMStats \
         Torch \
 	AOKPTorch \
-        XenonWallpapers\
 	VoicePlus \
 	libemoji \
 	Dialer \
@@ -67,78 +64,78 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1
 
 # Common dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/xenonhd/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/dictionaries
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/xenonhd/proprietary/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/xenonhd/proprietary/common/etc/liberty.cfg:system/etc
+    vendor/romfactory/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/romfactory/proprietary/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/romfactory/proprietary/common/etc/liberty.cfg:system/etc
         
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/xenonhd/proprietary/common/etc/init.local.rc:root/init.xenonhd.rc \
-    vendor/xenonhd/proprietary/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/xenonhd/proprietary/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/xenonhd/proprietary/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-    vendor/xenonhd/proprietary/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
-    vendor/xenonhd/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/xenonhd/proprietary/common/bin/sysinit:system/bin/sysinit
+    vendor/romfactory/proprietary/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/romfactory/proprietary/common/etc/init.local.rc:root/init.romfactory.rc \
+    vendor/romfactory/proprietary/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/romfactory/proprietary/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/romfactory/proprietary/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/romfactory/proprietary/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
+    vendor/romfactory/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/romfactory/proprietary/common/bin/sysinit:system/bin/sysinit
 
 # SU Support
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/bin/su:system/xbin/su \
-    vendor/xenonhd/proprietary/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/xenonhd/proprietary/common/app/Superuser.apk:system/app/Superuser.apk 
+    vendor/romfactory/proprietary/common/bin/su:system/xbin/su \
+    vendor/romfactory/proprietary/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/romfactory/proprietary/common/app/Superuser.apk:system/app/Superuser.apk 
     
 # Cron schedual 
 #PRODUCT_COPY_FILES += \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-#    vendor/xenonhd/proprietary/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_ca
+#    vendor/romfactory/proprietary/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+#    vendor/romfactory/proprietary/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_ca
     
 # Term info for nano support
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
-    vendor/xenonhd/proprietary/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown
+    vendor/romfactory/proprietary/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
+    vendor/romfactory/proprietary/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown
     
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/etc/init.local.rc:system/etc/init.local.rc \
-    vendor/xenonhd/proprietary/common/bin/compcache:system/bin/compcache \
-    vendor/xenonhd/proprietary/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/romfactory/proprietary/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/romfactory/proprietary/common/bin/compcache:system/bin/compcache \
+    vendor/romfactory/proprietary/common/bin/handle_compcache:system/bin/handle_compcache
     
 # Added xbin files
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/proprietary/common/xbin/backup:system/xbin/backup \
-    vendor/xenonhd/proprietary/common/xbin/btool:system/xbin/btool \
-    vendor/xenonhd/proprietary/common/xbin/drm1_func_test:system/xbin/drm1_func_test \
-    vendor/xenonhd/proprietary/common/xbin/gdb:system/xbin/gdb \
-    vendor/xenonhd/proprietary/common/xbin/gdbserver:system/xbin/gdbserver \
-    vendor/xenonhd/proprietary/common/xbin/market_history:system/xbin/market_history \
-    vendor/xenonhd/proprietary/common/xbin/rm_apks:system/xbin/rm_apks \
-    vendor/xenonhd/proprietary/common/xbin/run_backup:system/xbin/run_backup \
-    vendor/xenonhd/proprietary/common/xbin/run_restore:system/xbin/run_restore \
-    vendor/xenonhd/proprietary/common/xbin/ssmgrd:system/xbin/ssmgrd \
-    vendor/xenonhd/proprietary/common/xbin/sysro:system/xbin/sysro \
-    vendor/xenonhd/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/xenonhd/proprietary/common/xbin/zip:system/xbin/zip \
-    vendor/xenonhd/proprietary/common/xbin/zipalign:system/xbin/zipalign
+    vendor/romfactory/proprietary/common/xbin/backup:system/xbin/backup \
+    vendor/romfactory/proprietary/common/xbin/btool:system/xbin/btool \
+    vendor/romfactory/proprietary/common/xbin/drm1_func_test:system/xbin/drm1_func_test \
+    vendor/romfactory/proprietary/common/xbin/gdb:system/xbin/gdb \
+    vendor/romfactory/proprietary/common/xbin/gdbserver:system/xbin/gdbserver \
+    vendor/romfactory/proprietary/common/xbin/market_history:system/xbin/market_history \
+    vendor/romfactory/proprietary/common/xbin/rm_apks:system/xbin/rm_apks \
+    vendor/romfactory/proprietary/common/xbin/run_backup:system/xbin/run_backup \
+    vendor/romfactory/proprietary/common/xbin/run_restore:system/xbin/run_restore \
+    vendor/romfactory/proprietary/common/xbin/ssmgrd:system/xbin/ssmgrd \
+    vendor/romfactory/proprietary/common/xbin/sysro:system/xbin/sysro \
+    vendor/romfactory/proprietary/common/xbin/sysrw:system/xbin/sysrw \
+    vendor/romfactory/proprietary/common/xbin/zip:system/xbin/zip \
+    vendor/romfactory/proprietary/common/xbin/zipalign:system/xbin/zipalign
 
 #Declare your device here for APNs    
-ifneq ($(filter xenonhd_crespo xenonhd_endeavoru xenonhd_maguro xenonhd_tilapia xenonhd_mako xenonhd_m7tmo xenonhd_d2att xenonhd_d2tmo xenonhd_galaxysmtd xenonhd_i9100 xenonhd_i9100g xenonhd_i9300 xenonhd_n7000 xenonhd_n7100 xenonhd_t0lte xenonhd_t0lteatt xenonhd_t0ltetmo ,$(TARGET_PRODUCT)),)
+ifneq ($(filter romfactory_xt925,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-	vendor/xenonhd/proprietary/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+	vendor/romfactory/proprietary/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
-ifneq ($(filter xenonhd_d2vzw xenonhd_jfltevzw xenonhd_d2usc xenonhd_xt926 xenonhd_i605 xenonhd_l900 xenonhd_r950 ,$(TARGET_PRODUCT)),)
+ifneq ($(filter romfactory_xt926,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-	vendor/xenonhd/proprietary/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+	vendor/romfactory/proprietary/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
 # T-Mobile theme engine
@@ -148,7 +145,7 @@ PRODUCT_PACKAGES += \
            com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-       vendor/xenonhd/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/romfactory/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -156,4 +153,4 @@ PRODUCT_COPY_FILES += \
     
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.camera-sound=1    
+    persist.sys.camera-sound=1 

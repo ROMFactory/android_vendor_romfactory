@@ -3,7 +3,7 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/xenonhd/sepolicy
+    vendor/romfactory/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \
