@@ -15,7 +15,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/mako
 # Copy vanquish specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/romfactory/proprietary/hybrid/hybrid_xhdpi.conf:system/etc/beerbong/properties.conf \
-    vendor/romfactory/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/romfactory/proprietary/xt926/bootanimation.zip:system/media/bootanimation.zip \
     vendor/romfactory/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
     vendor/romfactory/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/romfactory/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
