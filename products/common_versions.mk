@@ -3,7 +3,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_VERSION_TAGS=
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rfversion=ROMFact-$(shell date +"%m-%d-%y") \
+    ro.rfversion=ROMFact-1.0.0-beta \
     ro.modversion=ROMFact-$(shell date +"%m-%d-%y") \
     ro.rommanager.developerid=pcarenza
     
