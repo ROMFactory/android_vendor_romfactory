@@ -9,22 +9,24 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/common
 
 PRODUCT_PACKAGES += \
+        AOKPTorch \
         Apollo \
+        audio_effects.conf \
         CMFileManager \
 	DeskClock \
+        Dialer \
 	DSPManager \
 	LatinImeDictionaryPack \
 	DashClock \
 	libcyanogen-dsp \
-	audio_effects.conf \
-        Focal \
+	libemoji \
+	libscreenrecorder \
 	Launcher3 \
         OTAUpdateCenter \
+	ScreenRecorder \
+        SunBeam \
         Torch \
-	AOKPTorch \
 	VoicePlus \
-	libemoji \
-	Dialer \
         BluetoothExt
        
 
