@@ -10,7 +10,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/common
 
 PRODUCT_PACKAGES += \
         AOKPTorch \
-        Apollo \
         audio_effects.conf \
         CMFileManager \
 	DeskClock \
@@ -28,7 +27,6 @@ PRODUCT_PACKAGES += \
         Torch \
 	VoicePlus \
         BluetoothExt
-       
 
 #extras	
 PRODUCT_PACKAGES += \
@@ -139,12 +137,6 @@ ifneq ($(filter romfactory_xt926,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
 	vendor/romfactory/proprietary/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
-
-# T-Mobile theme engine
-PRODUCT_PACKAGES += \
-	   ThemeManager \
-           ThemeChooser \
-           com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
        vendor/romfactory/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
