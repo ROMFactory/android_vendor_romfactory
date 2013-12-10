@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
 	start-ssh
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1 \
+    persist.sys.root_access=3 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
@@ -62,6 +62,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.supplicant_scan_interval=180 \
     ro.ril.disable.power.collapse=1 \
     pm.sleep_mode=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
 
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/dictionaries
