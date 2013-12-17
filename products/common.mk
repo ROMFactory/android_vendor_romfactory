@@ -88,6 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # SU Support
 PRODUCT_COPY_FILES += \
+    vendor/romfactory/proprietary/common/bin/su:system/xbin/daemonsu \
     vendor/romfactory/proprietary/common/bin/su:system/xbin/su \
     vendor/romfactory/proprietary/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/romfactory/proprietary/common/app/Superuser.apk:system/app/Superuser.apk 
