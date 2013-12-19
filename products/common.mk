@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
 	DeskClock \
         Dialer \
 	DSPManager \
+        FileManager \
 	LatinImeDictionaryPack \
 	DashClock \
 	libcyanogen-dsp \
