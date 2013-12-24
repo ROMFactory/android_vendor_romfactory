@@ -3,8 +3,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_VERSION_TAGS=
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rfversion=ROMFact-1.0.4-beta \
-    ro.modversion=ROMFact-1.0.4-beta \
+    ro.rfversion=ROMFact-1.1 \
+    ro.modversion=ROMFact-1.1 \
     ro.rommanager.developerid=pcarenza
     
 #OTA updater app
