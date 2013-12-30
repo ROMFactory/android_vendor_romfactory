@@ -166,7 +166,8 @@ if [ -z "$ROMFact" ]; then
 	: ${Device:=}
 	OUTFILE=$OUT/update-$MODVERSION-signed-$Device.zip
 else
-	OUTFILE=$OUT/update-squished.zip
+	OUTFILE=$OUT/$ROMFact
+        unset ROMFact
 fi
 
 # add qcom optimized dalvikVM
