@@ -9,24 +9,21 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/common
 
 PRODUCT_PACKAGES += \
-        AOKPTorch \
         audio_effects.conf \
         CMFileManager \
 	DeskClock \
         Dialer \
 	DSPManager \
-        FileManager \
 	LatinImeDictionaryPack \
 	DashClock \
 	libcyanogen-dsp \
 	libemoji \
 	libscreenrecorder \
 	Launcher3 \
-        OTAUpdateCenter \
+        MonthCalendarWidget \
 	ScreenRecorder \
         SunBeam \
         Torch \
-	VoicePlus \
         BluetoothExt
 
 #extras	
@@ -93,16 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/romfactory/proprietary/common/bin/su:system/xbin/su \
     vendor/romfactory/proprietary/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/romfactory/proprietary/common/app/Superuser.apk:system/app/Superuser.apk 
-    
-# Cron schedual 
-#PRODUCT_COPY_FILES += \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-#    vendor/romfactory/proprietary/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_ca
     
 # Term info for nano support
 PRODUCT_COPY_FILES += \
