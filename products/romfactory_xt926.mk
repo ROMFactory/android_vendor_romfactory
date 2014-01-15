@@ -20,6 +20,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/romfactory/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/romfactory/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
+$(call inherit-product, vendor/romfactory/configs/vzw.mk)
+
 # Inherit drm blobs
 -include vendor/romfactory/products/common_drm.mk
 
