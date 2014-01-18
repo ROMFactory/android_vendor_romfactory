@@ -14,7 +14,7 @@ else
   d=`date +"%y%m%d"`
   logd=`date +"%m%d%y"`
 fi
-CHANGELOGOUT=$ANDROID_BUILD_TOP/CHANGELOGS/vanir_$logd
+CHANGELOGOUT=$ANDROID_BUILD_TOP/CHANGELOGS/romfactory_$logd
 echo "" > $CHANGELOGOUT
 ln -sf $CHANGELOGOUT $ANDROID_BUILD_TOP/CHANGES.LOG
 logit()
@@ -40,7 +40,6 @@ version=`getbranch`
 newversion=HEAD
 if [ $1 ]; then lastversion=$1; fi
 if [ $2 ]; then newversion=$2; fi
-pushd . >& /dev/null
 repo forall -c pwd | while read PROJECT; do
 cd $PROJECT
 remote=`git branch -a | grep remotes/m/$version | sed 's/.* -> //g' | sed 's/\/.*//g' | sort -u`;
@@ -49,8 +48,8 @@ if [ `git remote -v | grep $remote | grep -v aosp | wc -l` -gt 0 ]; then
       prev=`git tag | sort -uh | grep -x '[0-9][0-9]*' | grep -v "$d"  | tail -n 1`
       if [ $prev ] && [ `echo $prev | wc -w` -eq 1 ]; then
         lastversion="$prev"
-      elif [ `git tag | sort -uh | grep vanir_ | wc -l` -gt 0 ]; then
-        lastversion="`git tag | sort -uh | grep vanir_ | tail -n 1`"
+      elif [ `git tag | sort -uh | grep romfactory_ | wc -l` -gt 0 ]; then
+        lastversion="`git tag | sort -uh | grep romfactory_ | tail -n 1`"
       else
         lastversion=m/$version
       fi
