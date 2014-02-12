@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES +=  \
 -include vendor/romfactory/products/common_drm.mk
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xenonhd_hammerhead
+PRODUCT_NAME := romfactory_hammerhead
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := hammerhead
 PRODUCT_MODEL := Nexus 5

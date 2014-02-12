@@ -1,3 +1,3 @@
-add_lunch_combo xenonhd_hammerhead-userdebug
-add_lunch_combo xenonhd_xt925-userdebug
-add_lunch_combo xenonhd_xt926-userdebug
+add_lunch_combo romfactory_hammerhead-userdebug
+add_lunch_combo romfactory_xt925-userdebug
+add_lunch_combo romfactory_xt926-userdebug

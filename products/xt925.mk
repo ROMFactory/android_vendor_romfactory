@@ -25,7 +25,7 @@ $(call inherit-product, vendor/romfactory/configs/gsm.mk)
 -include vendor/romfactory/products/common_drm.mk
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xenonhd_xt925
+PRODUCT_NAME := romfactory_xt925
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := xt925
 PRODUCT_MODEL := Razr HD GSM

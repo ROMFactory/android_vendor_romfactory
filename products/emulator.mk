@@ -8,7 +8,7 @@ $(call inherit-product, vendor/romfactory/products/common.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage7.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xenonhd_emulator
+PRODUCT_NAME := romfactory_emulator
 PRODUCT_BRAND := Android
 PRODUCT_DEVICE := generic
 PRODUCT_MODEL := Emulator

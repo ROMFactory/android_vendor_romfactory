@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES +=  \
 -include vendor/romfactory/products/common_drm.mk
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xenonhd_xt926
+PRODUCT_NAME := romfactory_xt926
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := xt926
 PRODUCT_MODEL := Droid Razr HD
