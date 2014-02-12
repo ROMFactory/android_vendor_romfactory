@@ -2,7 +2,7 @@
 $(call inherit-product, build/target/product/sdk.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/xenonhd/products/common.mk)
+$(call inherit-product, vendor/romfactory/products/common.mk)
 
 # Inherit audio package from Tuna
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage7.mk)
@@ -17,7 +17,7 @@ PRODUCT_MANUFACTURER := google
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=emulator
 
 # Inherit common build.prop overrides
--include vendor/xenonhd/products/common_versions.mk
+-include vendor/romfactory/products/common_versions.mk
 
 # Copy emulator specific prebuilt files
 PRODUCT_COPY_FILES +=  \

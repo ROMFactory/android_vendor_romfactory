@@ -1,28 +1,28 @@
 # Inherit AOSP device configuration for vanquish.
 $(call inherit-product, device/motorola/xt925/full_xt925.mk)
-$(call inherit-product, vendor/xenonhd/products/common.mk)
+$(call inherit-product, vendor/romfactory/products/common.mk)
 
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
 # Extra xt925 overlay (same as nexus 4)
-PRODUCT_PACKAGE_OVERLAYS += vendor/xenonhd/overlay/mako
+PRODUCT_PACKAGE_OVERLAYS += vendor/romfactory/overlay/mako
 
 # Copy vanquish specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/xenonhd/proprietary/hybrid/hybrid_xhdpi.conf:system/etc/beerbong/properties.conf \
-    vendor/xenonhd/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/xenonhd/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
-    vendor/xenonhd/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/xenonhd/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/romfactory/proprietary/hybrid/hybrid_xhdpi.conf:system/etc/beerbong/properties.conf \
+    vendor/romfactory/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/romfactory/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
+    vendor/romfactory/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/romfactory/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Inherit common build.prop overrides
--include vendor/xenonhd/products/common_versions.mk
+-include vendor/romfactory/products/common_versions.mk
 
-$(call inherit-product, vendor/xenonhd/configs/gsm.mk)
+$(call inherit-product, vendor/romfactory/configs/gsm.mk)
 
 # Inherit drm blobs
--include vendor/xenonhd/products/common_drm.mk
+-include vendor/romfactory/products/common_drm.mk
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xenonhd_xt925
