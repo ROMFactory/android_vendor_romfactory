@@ -9,7 +9,7 @@ $(call inherit-product, vendor/romfactory/products/common.mk)
 
 # Copy hammerhead specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/romfactory/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/romfactory/proprietary/hammerhead/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/romfactory/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
     vendor/romfactory/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/romfactory/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
