@@ -3,9 +3,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_VERSION_TAGS=
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xehdversion=XenonHD-$(shell date +"%m-%d-%y") \
-    ro.rfversion=ROMFact-1.2.1 \
-    ro.modversion=ROMFact-1.2.1 \
+    ro.rfversion=ROMFact-1.3.0 \
+    ro.modversion=ROMFact-1.3.0 \
     ro.rommanager.developerid=pcarenza
     
 
